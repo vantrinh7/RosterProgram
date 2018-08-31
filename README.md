@@ -1,9 +1,9 @@
-Roster Program
+# Roster Program
 
 
 Description
 
-* LinkedListNode and LinkedList are interfaces that describe a node and a linked list of nodes (Written by Eitan).
+* LinkedListNode and LinkedList are interfaces that describe a node and a linked list of nodes.
 
 * SinglyLinkedListNode and SinglyLinkedList are used to create a linked list of nodes in which each node has only
 one pointer towards the next node (Written by Eitan).
