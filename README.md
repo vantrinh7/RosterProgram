@@ -1,6 +1,5 @@
-Name: Van Trinh
+Roster Program
 
-Assignment: 1
 
 Description
 
@@ -25,10 +24,3 @@ This class also implements an Action Listener, to detect and react to button cli
 in Roster and DoublyLinkedList to modify the lists when "Add" or "Remove" buttons are clicked. 
 
 
-References - I referenced StackOverFlow, GeeksForGeeks and Youtube when encountering bugs and questions.
-
-I have tried to make the program as simple as possible without being sloppy. There seems to be a lot of coding, but I
-believe they are there for good reason. Although the program sounds very simple, there are in fact a lot of functionalities
-to be implemented. DoublyLinkedList and RosterGUIController are much longer than others, mainly because of their crucial
-functions in the program. I put a lot of thought into making the program look tolerable and executable. Please bear with
-me till the last code lines. Thank you for your reading and understanding :).
