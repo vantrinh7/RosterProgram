@@ -6,7 +6,7 @@ Description
 * LinkedListNode and LinkedList are interfaces that describe a node and a linked list of nodes.
 
 * SinglyLinkedListNode and SinglyLinkedList are used to create a linked list of nodes in which each node has only
-one pointer towards the next node (Written by Eitan).
+one pointer towards the next node.
 
 * DoublyLinkedListNode and DoublyLinkedList are used to create a linked list of nodes that have a pointer towards
 the next node, and a pointer towards the previous node. They contain methods to construct and modify doubly linked 
