@@ -1,7 +1,10 @@
 # Roster Program
 
+Roster is a program that keeps track of students during a period of adding and dropping classes. 
 
-Description
+
+
+## File Description
 
 * LinkedListNode and LinkedList are interfaces that describe a node and a linked list of nodes.
 
@@ -13,8 +16,7 @@ the next node, and a pointer towards the previous node. They contain methods to 
 list node and doubly linked list to be used for Roster class.
 
 * Roster is a list of students being kept track during add/drop period. It is listed in alphabetically order and
-has the maximum size of 3. If more than 3 students are added, the extras will show up in the waitlist, which does 
-not have alphabetical order but the order of who is added first.
+has the size provided by the user. If more studenst than the determined size are added, the extras will show up in the waitlist, which does not have alphabetical order but the order of who is added first.
 
 * RosterApplication has main method that creates a frame and calls RosterGUIController.
 
