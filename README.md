@@ -2,6 +2,7 @@
 
 Roster is a program that keeps track of students during a period of adding and dropping classes. 
 
+![](misc/1.png) ![](misc/2.png)
 
 
 ## File Description
