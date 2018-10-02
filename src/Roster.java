@@ -7,8 +7,8 @@
  */
 public class Roster {
 
-	/* Maximum size of the roster */
-	public static final int MAX_SIZE = 3;
+	/* Size of the roster */
+	//private int size;
 
 	/* A doubly linked list variable for roster */
 	private DoublyLinkedList<String> roster;
@@ -37,9 +37,9 @@ public class Roster {
 	 * @param givenName
 	 *            student's given name
 	 */
-	public void add(String surname, String givenName) {
+	public void add(String surname, String givenName, int curSize) {
 
-		if (count < MAX_SIZE) {
+		if (count < curSize) {
 
 			/* Add to roster alphabetically */
 			compareAndAdd(surname, givenName);

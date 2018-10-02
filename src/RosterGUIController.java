@@ -20,6 +20,9 @@ public class RosterGUIController extends JPanel implements ActionListener {
 
 	/* The wait list */
 	private DoublyLinkedList<String> waitlist;
+	
+	/* Roster size */
+	private JTextField sizeText;
 
 	/* Text area to type surname */
 	private JTextField surNameText;
@@ -72,6 +75,9 @@ public class RosterGUIController extends JPanel implements ActionListener {
 	 * Create the left view
 	 */
 	public void createLeft() {
+		
+		// Create a label for roster size
+		JLabel size = new JLabel("Roster size");
 
 		/* Create a label for surname */
 		JLabel surName = new JLabel("Surname");
@@ -80,6 +86,7 @@ public class RosterGUIController extends JPanel implements ActionListener {
 		JLabel givenName = new JLabel("Given Name");
 
 		/* Create two name text fields with width of 5 columns */
+		sizeText = new JTextField(5);
 		surNameText = new JTextField(5);
 		givenNameText = new JTextField(5);
 
@@ -99,7 +106,10 @@ public class RosterGUIController extends JPanel implements ActionListener {
 		 * Add the items to the panel, and adjusting the positions by creating rigid
 		 * (empty) areas between them
 		 */
-		westPanel.add(Box.createRigidArea(new Dimension(100, 30)));
+		westPanel.add(Box.createRigidArea(new Dimension(100, 20)));
+		westPanel.add(size);
+		westPanel.add(sizeText);
+		westPanel.add(Box.createRigidArea(new Dimension(100, 40)));
 		westPanel.add(surName);
 		westPanel.add(Box.createRigidArea(new Dimension(100, 20)));
 		westPanel.add(surNameText);
@@ -178,6 +188,7 @@ public class RosterGUIController extends JPanel implements ActionListener {
 		removeButton.addActionListener(this);
 
 		/* Create labels */
+		JLabel instruction = new JLabel("Remove Name:");
 		JLabel last = new JLabel("Surname");
 		JLabel first = new JLabel("Given Name");
 
@@ -197,7 +208,9 @@ public class RosterGUIController extends JPanel implements ActionListener {
 		 * Add the items to the panel, and adjusting the positions by creating rigid
 		 * (empty) areas between them
 		 */
-		southPanel.add(Box.createRigidArea(new Dimension(140, 30)));
+		southPanel.add(Box.createRigidArea(new Dimension(50, 30)));
+		southPanel.add(instruction);
+		southPanel.add(Box.createRigidArea(new Dimension(50, 30)));
 		southPanel.add(last);
 		southPanel.add(Box.createRigidArea(new Dimension(10, 30)));
 		southPanel.add(removedLast);
@@ -235,6 +248,10 @@ public class RosterGUIController extends JPanel implements ActionListener {
 			String message = "Part of name is missing, please provide both Surname and Given Name!";
 			JOptionPane.showConfirmDialog(null, message, "Warning", JOptionPane.CANCEL_OPTION);
 		}
+		else if (sizeText.getText().equals("")) { /* If size is missing */
+			String message = "Please provide the size of Roster!";
+			JOptionPane.showConfirmDialog(null, message, "Warning", JOptionPane.CANCEL_OPTION);
+		}
 		/* If name texts are not empty */
 		else if ((!surNameText.getText().equals("")) && (!givenNameText.getText().equals(""))) {
 
@@ -254,7 +271,7 @@ public class RosterGUIController extends JPanel implements ActionListener {
 
 			} else {
 				/* Add to roster list */
-				newRoster.add(surNameText.getText(), givenNameText.getText());
+				newRoster.add(surNameText.getText(), givenNameText.getText(), Integer.valueOf(sizeText.getText()));
 
 				/* Erase the current display, get the sorted roster */
 				rosterArea.setText("");
