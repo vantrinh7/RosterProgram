@@ -8,20 +8,14 @@ The user interface consists of a column with roster size and name of student to 
 
 ## File Description
 
-* LinkedListNode and LinkedList are interfaces that describe a node and a linked list of nodes.
+* ![LinkedListNode](https://github.com/vantrinh7/RosterProgram/blob/master/src/LinkedListNode.java) and ![LinkedList](https://github.com/vantrinh7/RosterProgram/blob/master/src/LinkedList.java) are interfaces that describe a node and a linked list of nodes.
 
-* DoublyLinkedListNode and DoublyLinkedList are used to create a list of nodes, in which each node has a pointer towards
-the next node, and a pointer towards the previous node. They contain methods to construct and modify doubly linked 
-list node and list to be used for Roster class.
+* ![DoublyLinkedListNode](https://github.com/vantrinh7/RosterProgram/blob/master/src/DoublyLinkedListNode.java) and ![DoublyLinkedList](https://github.com/vantrinh7/RosterProgram/blob/master/src/DoublyLinkedList.java) are used to create a list of nodes, in which each node has a pointer towards the next node, and a pointer towards the previous node. They contain methods to construct and modify doubly linked list node and list to be used for Roster class.
 
-* Roster is a list of students being kept track during add/drop period. It is listed in alphabetically order and
-has the size provided by the user. If more studenst than the determined size are added, the extras will show up in the waitlist, which does not have alphabetical order but the order of who is added first.
+* ![Roster](https://github.com/vantrinh7/RosterProgram/blob/master/src/Roster.java) is a list of students being kept track during add/drop period. It is listed in alphabetically order and has the size provided by the user. If more studenst than the determined size are added, the extras will show up in the waitlist, which does not have alphabetical order but the order of who is added first.
 
-* RosterApplication has main method that creates a frame and calls RosterGUIController.
+* ![RosterApplication](https://github.com/vantrinh7/RosterProgram/blob/master/src/RosterApplication.java) has main method that creates a frame and calls RosterGUIController.
 
-* RosterGUIController utilizes BorderLayout manager as an overall layout, creates the panels in the center, west, east
-and bottom. The west and bottom panels use BoxLayout to hold JTextFields (to enter names) and JButtons (to modify lists). 
-This class also implements an Action Listener, to detect and react to button click events. Specifically, it calls methods
-in Roster and DoublyLinkedList to modify the lists when "Add" or "Remove" buttons are clicked. 
+* ![RosterGUIController](https://github.com/vantrinh7/RosterProgram/blob/master/src/RosterGUIController.java) utilizes BorderLayout manager as an overall layout, creates the panels in the center, west, east and bottom. The west and bottom panels use BoxLayout to hold JTextFields (to enter names) and JButtons (to modify lists). This class also implements an Action Listener, to detect and react to button click events. Specifically, it calls methods in Roster and DoublyLinkedList to modify the lists when "Add" or "Remove" buttons are clicked. 
 
 
