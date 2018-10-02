@@ -2,7 +2,7 @@
 
 Roster is a program that keeps track of students during a period of adding and dropping classes. 
 
-![](misc/1.png) ![](misc/2.png)
+![](misc/1.png)      ![](misc/2.png)
 
 The user interface consists of a column with roster size and name of student to be added. Student names are sorted into alphabetical order in the Roster, and first-in-first-out order in the Waitlist. At the beginning, students are added to the Roster, and when the roster reaches its given size, students are added to the waitlist. When removing a student name, the program searches and removes the name from whichever list it is in. 
 
