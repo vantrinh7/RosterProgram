@@ -16,6 +16,6 @@ The user interface consists of a column with roster size and name of student to 
 
 * [RosterApplication](https://github.com/vantrinh7/RosterProgram/blob/master/src/RosterApplication.java) has the main method, which creates a frame and calls RosterGUIController.
 
-* [RosterGUIController](https://github.com/vantrinh7/RosterProgram/blob/master/src/RosterGUIController.java) utilizes BorderLayout manager as an overall layout, creates the panels in the center, west, east and bottom. The west and bottom panels use BoxLayout to hold JTextFields (to enter names) and JButtons (to modify lists). This class also implements an Action Listener, to detect and react to button click events. Specifically, it calls methods in Roster and DoublyLinkedList to modify the lists when "Add" or "Remove" buttons are clicked. 
+* [RosterGUIController](https://github.com/vantrinh7/RosterProgram/blob/master/src/RosterGUIController.java) utilizes BorderLayout manager as an overall layout, creates the panels in the center, west, east and bottom. The west and bottom panels use BoxLayout to hold JTextFields (to enter names) and JButtons (to modify lists). This class also implements an Action Listener that detects and reacts to button click events. Specifically, it calls methods in Roster and DoublyLinkedList to modify the lists when "Add" or "Remove" buttons are clicked. 
 
 
